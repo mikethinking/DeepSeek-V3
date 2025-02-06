@@ -8,9 +8,9 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: deepseek-ai/DeepSeek-V3@master
+      - uses: deepseek-ai/DeepSeek-V3@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: deepseek-ai # fork 的上游仓库 user
-          head: master # fork 的上游仓库 branch
-          base: master # 本地仓库 branch
+          head: main # fork 的上游仓库 branch
+          base: main # 本地仓库 branch
